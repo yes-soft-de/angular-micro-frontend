@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Micro Frontend Demo</title>
+        <link href="css/style.css" rel="stylesheet">
+        <base href="">
+    </head>
+    <body>
+        <main>
+            <!--header app here-->
+            <header-app></header-app>
+            <script src="apps/headerApp/headerApp-elements-es2015.js"></script>
+            <!--header app here-->
+            <div class="wrapper">
+                <section class="content">
+
+                    <!--main app here-->
+                    <main-app auth-token="TDkj234kh23ljhlkjh234jh2342hkj232b429898"></main-app>                                    
+                    <script src="apps/mainApp/mainApp-elements-es2015.js"></script>
+                    <!--main app here-->
+
+                    <!--sub app here-->
+                    <sub-app></sub-app>                
+                    <script src="apps/subApp/subApp-elements-es2015.js"></script>
+                    <!--sub app here-->
+
+                </section><!--.content-->
+                <section class="side-nav">
+
+                    <!--side app here-->                    
+                    <side-app></side-app>                
+                    <script src="apps/sideApp/sideApp-elements-es2015.js"></script>
+                    <!--side app here-->
+                    
+                </section><!--.side-nav-->
+            </div><!--.wrapper-->
+            <!--footer app goes here-->
+            <footer-app></footer-app>
+            <script defer src="apps/footerApp/footerApp-elements-es2015.js"></script>
+            <!--footer app goes here-->
+        </main>
+    </body>
+</html>
